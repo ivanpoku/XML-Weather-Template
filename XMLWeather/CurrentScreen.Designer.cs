@@ -41,6 +41,8 @@
             this.citySearch = new System.Windows.Forms.TextBox();
             this.cityButton = new System.Windows.Forms.Button();
             this.searchLabel = new System.Windows.Forms.Label();
+            this.windSpeedLabel = new System.Windows.Forms.Label();
+            this.windSpeedOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -201,11 +203,41 @@
             this.searchLabel.Text = "City Search";
             this.searchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // windSpeedLabel
+            // 
+            this.windSpeedLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windSpeedLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windSpeedLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.windSpeedLabel.Location = new System.Drawing.Point(92, 430);
+            this.windSpeedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windSpeedLabel.Name = "windSpeedLabel";
+            this.windSpeedLabel.Size = new System.Drawing.Size(192, 32);
+            this.windSpeedLabel.TabIndex = 47;
+            this.windSpeedLabel.Text = "Wind Speed";
+            this.windSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.windSpeedLabel.Visible = false;
+            // 
+            // windSpeedOutput
+            // 
+            this.windSpeedOutput.BackColor = System.Drawing.Color.Transparent;
+            this.windSpeedOutput.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windSpeedOutput.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.windSpeedOutput.Location = new System.Drawing.Point(0, 462);
+            this.windSpeedOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.windSpeedOutput.Name = "windSpeedOutput";
+            this.windSpeedOutput.Size = new System.Drawing.Size(375, 32);
+            this.windSpeedOutput.TabIndex = 48;
+            this.windSpeedOutput.Text = "0km/h";
+            this.windSpeedOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.windSpeedOutput.Visible = false;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
+            this.Controls.Add(this.windSpeedOutput);
+            this.Controls.Add(this.windSpeedLabel);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.cityButton);
             this.Controls.Add(this.citySearch);
@@ -242,5 +274,7 @@
         private System.Windows.Forms.TextBox citySearch;
         private System.Windows.Forms.Button cityButton;
         private System.Windows.Forms.Label searchLabel;
+        private System.Windows.Forms.Label windSpeedLabel;
+        private System.Windows.Forms.Label windSpeedOutput;
     }
 }

@@ -34,7 +34,7 @@ namespace XMLWeather
         Image snow = Properties.Resources._13d_2x;
         Image mist = Properties.Resources._50d_2x;
 
-        Rectangle iconRec = new Rectangle(75, 225,100,100);
+        Rectangle iconRec = new Rectangle(75, 220,100,100);
         SolidBrush recBrush = new SolidBrush(Color.White);
         public CurrentScreen()
         {
@@ -57,6 +57,7 @@ namespace XMLWeather
             maxTempValue = Math.Round(maxTempValue, 0);
             maxOutput.Text = $"{maxTempValue} °";
             conditionOutput.Text = $"{Form1.days[0].condition}";
+            windSpeedOutput.Text = $"{Form1.days[0].windSpeed} m/s, {Form1.days[0].windDirection}";
 
             conditionNum = Convert.ToDouble(Form1.days[0].conditionValue);
 

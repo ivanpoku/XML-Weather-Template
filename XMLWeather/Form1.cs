@@ -76,6 +76,12 @@ namespace XMLWeather
             days[0].condition = reader.GetAttribute("value");
             days[0].conditionValue = reader.GetAttribute("number");
 
+            reader.ReadToFollowing("wind");
+            days[0].windSpeed = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("direction");
+            days[0].windDirection = reader.GetAttribute("code");
+
 
 
         }
