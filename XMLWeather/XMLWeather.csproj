@@ -39,6 +39,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -102,6 +103,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rain3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\711319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02d%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01d%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
